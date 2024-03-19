@@ -14,6 +14,10 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 import Comment from "../comments/Comment";
 
+import InfiniteScroll from "react-infinite-scroll-component";
+import Asset from "../../components/Asset";
+import { fetchMoreData } from "../../utils/utils";
+
 function PostPage() {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
@@ -57,26 +61,32 @@ function PostPage() {
             "Comments"
           ) : null}
           {comments.results.length ? (
-            comments.results.map((comment) => (
+            <InfiniteScroll
+            children={comments.results.map((comment) => (
               <Comment
                 key={comment.id}
-                {...comment} 
+                {...comment}
                 setPost={setPost}
                 setComments={setComments}
-                />
-            ))
-          ) : currentUser ? (
-            <span>No comments yet, be the first to comment!</span>
-          ) : (
-            <span>No comments... yet</span>
-          )}
-        </Container>
-      </Col>
-      <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
-        Popular profiles for desktop
-      </Col>
-    </Row>
-  );
+              />
+            ))}
+            dataLength={comments.results.length}
+            loader={<Asset spinner />}
+            hasMore={!!comments.next}
+            next={() => fetchMoreData(comments, setComments)}
+          />
+        ) : currentUser ? (
+          <span>No comments yet, be the first to comment!</span>
+        ) : (
+          <span>No comments... yet</span>
+        )}
+      </Container>
+    </Col>
+    <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+      Popular profiles for desktop
+    </Col>
+  </Row>
+);
 }
 
 export default PostPage;
