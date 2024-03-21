@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Modal from "react-bootstrap/Modal";
 
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -13,7 +15,7 @@ import btnStyles from "../../styles/Button.module.css";
 import PopularProfiles from "./PopularProfiles";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { useParams } from "react-router";
-import { axiosReq } from "../../api/axiosDefaults";
+import { axiosReq, axiosRes } from "../../api/axiosDefaults";
 import {
   useProfileData,
   useSetProfileData,
@@ -25,6 +27,8 @@ import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 
+import Barista from "../barista/Barista";
+
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
@@ -34,6 +38,21 @@ function ProfilePage() {
   const { pageProfile } = useProfileData();
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
+  const baristaId = profile?.baristaId
+  const [baristaData, setBaristaData] = useState(null);
+
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  const handleDeleteBarista = async () => {
+    try {
+      await axios.delete(`/barista/${baristaId}/`);
+      await axiosRes.put(`/profiles/${id}/`, { baristaId: null });
+      setBaristaData(null);
+    } catch (err) {}
+    handleClose();
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,13 +66,20 @@ function ProfilePage() {
           pageProfile: { results: [pageProfile] },
         }));
         setProfilePosts(profilePosts);
+        try {
+          const { data } = await axiosReq.get(`/barista/${baristaId}/`);
+          setBaristaData(data);
+        } catch (err) {
+          setBaristaData(null);
+        }
         setHasLoaded(true);
       } catch (err) {
+        setBaristaData(null);
         console.log(err);
       }
     };
     fetchData();
-  }, [id, setProfileData]);
+  }, [id, setProfileData, baristaId]);
 
   const mainProfile = (
     <>
@@ -68,6 +94,7 @@ function ProfilePage() {
         </Col>
         <Col lg={6}>
           <h3 className="m-2">{profile?.owner}</h3>
+          {profile?.baristaId && <p>I am an Barista</p>}
           <Row className="justify-content-center no-gutters">
             <Col xs={3} className="my-2">
               <div>{profile?.posts_count}</div>
@@ -139,6 +166,33 @@ function ProfilePage() {
           {hasLoaded ? (
             <>
               {mainProfile}
+              {profile?.baristaId && is_owner && (
+                <Button className={`${btnStyles.Button} mb-2`} onClick={handleShow}>
+                  Remove as Barista
+                </Button>
+              )}
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Confirm Delete</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  Are you sure you want to delete your Barista profile?
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Cancel
+                  </Button>
+                  <Button
+                    className={btnStyles.Button}
+                    onClick={handleDeleteBarista}
+                  >
+                    Confirm
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+              {baristaData && (
+                <Barista {...baristaData} isProfilePage showAll />
+              )}
               {mainProfilePosts}
             </>
           ) : (

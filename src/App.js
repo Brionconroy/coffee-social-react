@@ -17,6 +17,8 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 
 import ContactCreateForm from "./pages/contacts/ContactAdminForm";
+import BaristaPage from "./pages/barista/BaristaPage";
+import BaristaCreateForm from "./pages/barista/BaristaCreateForm";
 
 
 function App() {
@@ -63,21 +65,23 @@ function App() {
               <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
               <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
               <Route exact path="/contact_admin/" render={() => <ContactCreateForm />} />
+              <Route exact path="/barista/" render={() => <BaristaPage />} />
+              <Route exact path="/barista/create" render={() => <BaristaCreateForm />} />
               <Route
-  exact
-  path="/profiles/:id/edit/username"
-  render={() => <UsernameForm />}
-/>
-<Route
-  exact
-  path="/profiles/:id/edit/password"
-  render={() => <UserPasswordForm />}
-/>
-<Route
-  exact
-  path="/profiles/:id/edit"
-  render={() => <ProfileEditForm />}
-/>
+                exact
+                path="/profiles/:id/edit/username"
+                render={() => <UsernameForm />}
+              />
+              <Route
+                exact
+                path="/profiles/:id/edit/password"
+                render={() => <UserPasswordForm />}
+              />
+              <Route
+                exact
+                path="/profiles/:id/edit"
+                render={() => <ProfileEditForm />}
+              />
               <Route exact path="/reviews" render={() => <h1>Reviews</h1>} />
               <Route render={() => <p>Page not found!</p>} />
             </Switch>

@@ -71,6 +71,14 @@ export function ProfileEditDropdown({ id }) {
           <i className="fas fa-key" />
           change password
         </Dropdown.Item>
+        <Dropdown.Item
+          // user redircted to Barista form
+          onClick={() => history.push("/barista/create")}
+          aria-label="add-barista"
+        >
+          <i className="fa-solid fa-mug-hot" />
+          Register As A Barista
+        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
