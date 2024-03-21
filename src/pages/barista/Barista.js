@@ -4,7 +4,6 @@ import Media from "react-bootstrap/Media";
 
 import { Link, useHistory } from "react-router-dom";
 import { Button } from "react-bootstrap";
-// import { Rating } from 'react-simple-star-rating'
 import Avatar from "../../components/Avatar";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
@@ -23,8 +22,6 @@ const Barista = (props) => {
     rates_per_hour,
     location,
     email,
-    review_count,
-    // star_rating,
     isProfilePage,
     showAll,
   } = props;
@@ -45,32 +42,22 @@ const Barista = (props) => {
           </Media>
         )}
         <p className="text-center">
-          Speciality:
+           Speciality:
           {speciality_types}
         </p>
         <p className="text-center">
-          Location:
+           Location:
           {location}
         </p>
         <p className="text-center">
-          Rate: €
+           Rate: €
           {rates_per_hour}
           {" "}
-          per hour
+           per hour
         </p>
         <p className="text-center">
-          Email:
+           Email:
           {email}
-        </p>
-        {/* <p className="text-center">
-          Rating:
-          {" "}
-          <Rating readonly initialValue={star_rating} size={25} />
-        </p> */}
-        <p>
-          {review_count}
-          {" "}
-          reviews
         </p>
         {!is_owner && (
           <Button
