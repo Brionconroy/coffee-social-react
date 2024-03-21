@@ -49,7 +49,7 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/feed"
       >
-        <i className="fa fa-stream"></i>Feed
+        <i className="fa-solid fa-rss"></i>Feed
       </NavLink>
       <NavLink
         className={styles.NavLink}
@@ -58,13 +58,6 @@ const NavBar = () => {
       >
         <i className="fa fa-heart"></i>Likes
       </NavLink>
-      {/* <NavLink
-        to="/reviews"
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-      >
-        <i className="fa-solid fa-thumbs-up"></i>Reviews
-      </NavLink> */}
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
