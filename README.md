@@ -1,4 +1,4 @@
-# The Corner Bistro 
+# Coffee Socail React FrontEnd
 
 ## Introduction 
 
