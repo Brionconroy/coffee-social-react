@@ -75,7 +75,7 @@ function ProfilePage() {
         setHasLoaded(true);
       } catch (err) {
         setBaristaData(null);
-        console.log(err);
+        // console.log(err);
       }
     };
     fetchData();
