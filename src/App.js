@@ -23,6 +23,7 @@ import BaristaCreateForm from "./pages/barista/BaristaCreateForm";
 
 import ReviewsPage from "./pages/reviews/ReviewsPage";
 import ReviewCreateForm from "./pages/reviews/ReviewCreateForm";
+import NotFound from "./components/Notfound";
 
 
 function App() {
@@ -132,7 +133,7 @@ function App() {
                 path="/reviews/:id/create/"
                 render={() => <ReviewCreateForm />}
               />
-              <Route render={() => <p>Page not found!</p>} />
+              <Route render={() => <NotFound/>} />
             </Switch>
           </Container>
         </div>
