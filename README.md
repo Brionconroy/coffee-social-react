@@ -2,13 +2,11 @@
 
 ## Introduction 
 
-The Coffee Social API is Back-end database that caters for my front-end React project, the Coffee Social. the coffee Social is a social site for coffee lovers to post or blog about there coffee jerney and or to trubble shoot there coffee recipes.
-
+The concept of the site came to my when i was looking around the internet for information on differnt coffee machines to percous. after i got one the real trubole shooting started. i was going from formum to forum trying to sift throught the information i was looking for. i thought it might be a better idea to create a space for coffee inthosast to come to gether to be able to ask questions and in general selibrate coffee.
+The Coffee Social API is Front-End React App, the Coffee Social. The coffee Social is a social site for coffee lovers to post or blog about there coffee jerney and or to trouble shoot there coffee recipes.
 The site allows an Admin user to login using a pre-registered login(superuser) from there the Admin-user can create, read, update and delete(CRUD) Profiles, post and comments. 
-
 This website also allows a users to create a login, make a post on the wbesite and view an edit the there posts and comment/like others. 
 
-To create this website Agile principles where used. The frameworks used were django and Django rest framwork. 
 
  + This is a link to my live website [Live site](https://coffee-social-react-9c0fd55d8b45.herokuapp.com/)
  + This is a link to my Repo [Repo](https://github.com/Brionconroy/coffee-social-react)
@@ -144,7 +142,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 + Stratagy: Is this content relvent to the user and is it culturally appropriate? 
 
-+ Scope: Are we accomplishing our goals of broadcasting The Corner Bistros ethos. 
++ Scope: Are we accomplishing our goals of create a space that people will come together to discuss coffee. 
 
 + Structure: How many pages should we have in our website and why? 
 
@@ -165,7 +163,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-![Large Screen Dashboard](booking_service/static/images/readme/wireframe-landingpage.png) 
+![Large Screen Dashboard](src/assets/readme/wireframedesktop.png) 
 
  
  
@@ -185,7 +183,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-![Small Screen Dashboard](booking_service/static/images/readme/wireframe-mobile.png) 
+![Small Screen Dashboard](src/assets/readme/wireframemobile.png) 
 
  
  
@@ -648,6 +646,10 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 * [Heroku](https://www.heroku.com) 
 
+* [React](https://legacy.reactjs.org/) 
+
+* [Node](https://nodejs.org/en) 
+
 * [ElephantSQL](https://www.elephantsql.com/) 
 
 * [SQLite3](https://www.sqlite.org/index.html) 
@@ -670,8 +672,6 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
 
-* [CI pep8 linter](https://pep8ci.herokuapp.com/) 
-
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) 
 
 * [Balsamiq](https://balsamiq.com/wireframes/?gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5sikJlbA3yk1dYGRdNiY0Krv7_98bWbqabFd_DxfjzG1-J7kWnl2-byhoC2cIQAvD_BwE) 
@@ -688,7 +688,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 * [CSS3](https://www.w3schools.com/css/) 
 
-* [Python 3.9](https://www.python.org/downloads/release/python-390/) 
+* [Javascrpt](hhttps://devdocs.io/javascript/) 
 
  
  
@@ -704,13 +704,8 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-+ My login, logout and signup template from allauth where not loading my base templates. 
++ My my report section was not send reports to the data base, this was dou to an incorect url naming convention. it was an easy fix by changing contact-admins to contact-admin. by removing the s everthing worked fine.
 
-  + The fix was to move my booking_service app in the installeed app section in setting.py above the allauth installed app. this means the booking_service app was loading first. 
-
-+ When I try to view my Booking detials it shows me multiple Booking. This bug has not yet been resolved but will be in the future. Due to time constaints I must leave the bug in for now.
-
-  + The fix i believe is using a primary Key on each booking. When you want to see a booking call the primary key in the views.py file. 
 
  
  
@@ -843,237 +838,29 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 ### Code Validation 
 
- 
- 
-
-### HTML 
-
- 
- 
 
 + Before I deployed my App for the final time. I ran the code throught the validator and it pass. 
 
  
- 
 
 <details> 
 
  
  
 
-<summary>W3C Validation HTML</summary> 
+<summary>W3C Validation</summary> 
 
  
  
 
-![W3C Validation HTML](booking_service/static/images/readme/validation_testing/html-validater.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-### CSS 
-
- 
- 
-
-+ Before I deployed my App for the final time. I ran the code throught the validator and it pass. 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>W3C Validation CSS</summary> 
-
- 
- 
-
-![W3C Validation CSS](booking_service/static/images/readme/validation_testing/css-validation.png) 
+![W3C Validation](src/assets/readme/valadation.png) 
 
  
  
 
 </details> 
 
- 
- 
 
-### Python 
-
- 
- 
-
-+ Before I deployed my App for the final time. I ran the code throught the PEP8 validator and it pass. 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>view.py</summary> 
-
- 
- 
-
-![view.py](booking_service/static/images/readme/validation_testing/view.py_validation.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>setting.py</summary> 
-
- 
- 
-
-![setting.py](booking_service/static/images/readme/validation_testing/setting.py_validator.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>models.py</summary> 
-
- 
- 
-
-![models.py](booking_service/static/images/readme/validation_testing/models.py_validation.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>form.py</summary> 
-
- 
- 
-
-![form.py](booking_service/static/images/readme/validation_testing/form.py-validation.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>corner bistro url.py</summary> 
-
- 
- 
-
-![corner_bistro_url.py](booking_service/static/images/readme/validation_testing/corner_bistro_url.py_validation.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>booking service url.py</summary> 
-
- 
- 
-
-![booking_service_url.py](booking_service/static/images/readme/validation_testing/booking_service_url.py_validator.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>app.py</summary> 
-
- 
- 
-
-![app.py](booking_service/static/images/readme/validation_testing/app.py_validation.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>admin.py</summary> 
-
- 
- 
-
-![admin.py](booking_service/static/images/readme/validation_testing/admin.py_valation.png) 
-
- 
- 
-
-</details> 
-
- 
  
 
 ## Responsiveness Testing 
@@ -1098,7 +885,7 @@ As i was doing my responsive testing nothing broke in any of the browers. so i w
  
  
 
-+ I used the chrome developer tool light house witch gave me the insight of how my webpage looked on diffent screens everything looked great on each page and when i ran the light house analizs these are the score i got returned to me. 
++ I used the chrome developer tool light house witch gave me the insight of how my webpage looked on diffent screens everything looked great on each page and when i ran the light house analizs these are the score i got returned to me.  Testing was performed and found performance to be poor,this was because there where so many images. this could be combatted by improved by compressing images before uploading them. I didnt have time to implimant this but will in the future.
 
  
  
@@ -1108,99 +895,18 @@ As i was doing my responsive testing nothing broke in any of the browers. so i w
  
  
 
-<summary>Booking page</summary> 
+<summary>Lighthouse</summary> 
 
  
  
 
-![Booking page](booking_service/static/images/readme/lighthous_testing/lighthouse_booking.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>Home page</summary> 
-
- 
- 
-
-![Home page](booking_service/static/images/readme/lighthous_testing/lighthouse_home.png) 
+![Lighthouse](src/assets/readme/lighthouse.png) 
 
  
  
 
 </details> 
 
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>login page</summary> 
-
- 
- 
-
-![login page](booking_service/static/images/readme/lighthous_testing/lighthouse_login.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>Menu page</summary> 
-
- 
- 
-
-![menu page](booking_service/static/images/readme/lighthous_testing/lighthouse_menu.png) 
-
- 
- 
-
-</details> 
-
- 
- 
-
-<details> 
-
- 
- 
-
-<summary>Menu page</summary> 
-
- 
- 
-
-![menu page](booking_service/static/images/readme/lighthous_testing/lighthouse_sign_up.png) 
-
- 
- 
-
-</details> 
-
- 
  
 
 ## Deployment 
@@ -1208,7 +914,7 @@ As i was doing my responsive testing nothing broke in any of the browers. so i w
  
  
 
-The first thing you should do when creating a new project is to deploy it as quick as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy too. The framework I used in this project was Django, so the first thing you need to do is to create a Django project in you work space and install all the supporting libraries. Once evrthing is installed you should you should make a migration to the database with a small model to make sure everything works. 
+The first thing you should do when creating a new project is to deploy it as quick as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy too. I used in React, so the first thing you need to do is to create a React project in you work space and install all the supporting libraries. Once everything is installed you should make sure everthing is working with some hello world text.
 
  
  
@@ -1218,400 +924,45 @@ Just to make a note of this the database used in the workspace (db.sqlite3) does
  
  
 
-### Installing Django and Libraries 
+### Deploying To Heroku
 
- 
- 
-
-+ Step 1: Django and Gunicorn installation enter in the terminal: 
-
- 
- 
-
-        pip3 install 'django<4' gunicorn 
-
-+ Step 2: Install Supporting Libraries in the terminal: 
-
- 
- 
-
-        pip3 install dj_database_url==0.5.0 psycopg2 
-
-+ Step 3: Install Cloudinary Libraries in the terminal: 
-
- 
- 
-
-        pip3 install dj3-cloudinary-storage 
-
-        pip3 install urllib3==1.26.15 
-
-+ Step 4: Create a requirements file in the terminal: 
-
- 
- 
-
-        pip3 freeze --local > requirements.txt 
-
-+ Step 5: Create a Project in the terminal: 
-
- 
- 
-
-        django-admin startproject *Your Project name*. 
-
-+ Step 6: Create a App in the terminal: 
-
- 
- 
-
-        python3 manage.py startapp *App name* 
-
-+ Step 7: Add App name to the  Installed Apps in setting.py file. 
-
- 
- 
-
-+ Step 8: Migrate the changes enter in the terminal: 
-
- 
- 
-
-        python3 manage.py migrate 
-
-+ Step 9: Run the local server to make sure that everthing works, enter in the terminal: 
-
- 
- 
-
-        python3 manage.py runserver 
-
-+ Step 10: Add your local URL from the preview page to your setting.py file in the section thats called ALLOWED HOST. You must also Add your Heroku URL here too. 
-
- 
- 
-
-+ Step 11: Create ElephantSQL Database, by creating/login to your account, creating a new instance, and copying the URL into Heroku (See step 13) 
-
- 
- 
-
-+ Step 12: Create a new Heroku project by creating/login to your account and clicking (Create new app). Pick a name for your project and the region that your project is base in. Then click CREATE APP. 
-
- 
- 
-
-+ Step 13: In the Heroku app setting click on Reveal Config Vars, add DATABASE_URL as a value with the URL from ElephantSQL as the Key. Repeat this step for SECRET_KEY, DEBUG, CLOUDINARY_URL, Port and DISABLE_COLLECTSTATIC as seen in the image below. 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>config var Image</summary>  
-
- 
- 
-
-    ![config var](booking_service/static/images/readme/config-var.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
-
-+ Step 14: IN your workspace create an env.py file to store all your sensative data, like in step 13 add your DATABASE_URL, SECRET_KEY and CLOUDINARY_URL to this file. at the top of this file add import os. 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>Env.py</summary>  
-
- 
- 
-
-    ![Env.py](booking_service/static/images/readme/env.py.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
-
-+ Step 15: Go back to setting.py file and at the top add these lines of code 
-
- 
- 
-
-        from pathlib import Path 
-
-        import os 
-
-        import dj_database_url 
-
-        if os.path.isfile('env.py'): 
-
-            import env 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>Top of Setting.py</summary>  
-
- 
- 
-
-    ![Top of Setting.py](booking_service/static/images/readme/top_of_setting.py.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
-
-+ Step 16: In Setting.py find where it say SECRET_KEY and replace it with: 
-
- 
- 
-
-        SECRET_KEY = os.environ.get('SECRET_KEY') 
-
- 
- 
-
-+ Step 17: IN setting.py find the section DATABASES and comment out the section of code. 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>Database Comment Out</summary>  
-
- 
- 
-
-    ![Database Comment Out](booking_service/static/images/readme/database_comment_out.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
-
-+ Step 18: IN setting.py just below DATABASES the commented out section, add this code. 
-
- 
- 
-
-        DATABASES = { 
-
-            'default': dj_database_url.parse(os.environ.get("DATABASE_URL")) 
-
-        } 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>Database Add</summary>  
-
- 
- 
-
-    ![Database Add](booking_service/static/images/readme/database_add.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
- 
-
-+ Step 19: At this point it is a good idea to make a migration, so in the terminal: 
-
- 
- 
-
-        python3 manage.py migrate 
-
- 
- 
-
-+ Step 20: IN setting.py in the Installed Apps section add (location added is importent see image below): 
-
- 
- 
-
-        'cloudinary_storage', 
-
-        'cloudinary', 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>Cloudinary</summary>  
-
- 
- 
-
-    ![Cloudinary](booking_service/static/images/readme/cloudinary_apps.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
-
-+ Step 21: IN setting.py find the area called Static files and add this code.(makes Django use cloudinary for storing static files) 
-
- 
- 
-
-        STATIC_URL = '/static/' STATICFILES_STORAGE = ('cloudinary_storage.storage.' 'StaticHashedCloudinaryStorage') STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ] STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
-
- 
- 
-
-        MEDIA_URL = '/media/' DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' 
-
- 
- 
-
-        DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
-
- 
- 
-
-    <details> 
-
- 
- 
-
-    <summary>Cloudinary Static</summary>  
-
- 
- 
-
-    ![Cloudinary Static](booking_service/static/images/readme/cloudinary_static_media.png) 
-
- 
- 
-
-    </details> 
-
- 
- 
-
-+ Step 22: IN setting.py add this code just below BASE_DIR 
++ sign in or create an account if you have to.
 
- 
- 
-
-        TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates') 
-
- 
- 
-
-+ Step 23: create 3 new in the base directory static templates and media 
-
- 
- 
-
-+ Step 24: IN setting.py In the templates array add this: 
-
- 
- 
-
-        'DIRS': [TEMPLATES_DIR], 
-
- 
- 
++ Click on the New Button on the to right hand corner.
 
-    <details> 
++ enter the name of your new App.
 
- 
- 
++ select a region.
 
-    <summary>TEMPLATES</summary>  
-
- 
- 
++ click create.
 
-    ![TEMPLATES](booking_service/static/images/readme/templates_setting.png) 
++ Click on the deploy tab.
 
- 
- 
++ Conecet to your git hub repository.
 
-    </details> 
++ At the bottom of the deployed tab click on manualy deploy.
 
- 
- 
++ select the main barnch and click deploy.
 
-+ Step 25: Add a Procfile to the root directory make sire the Procfile has a capital P. In the Procfile add this code: 
++ Good Luck!
 
- 
- 
+### Run Localy
 
-        web: gunicorn cornerbistro.wsgi 
++ Go to the GitHub repo you want to clone
 
- 
- 
++ Click on the code dropdown menu
 
-+ Step 26: In your Heroku app navigate to the setting and add buildpack: heroku/python. 
++ Select the HTTPS
 
- 
- 
++ Copy the repo link
 
-+ Step 27: Link your GitHub Repo to your project. 
++ Open your IDE and in the terminal type git copie-git-url
 
- 
- 
++ the project you copied is now on your local computer.
 
-+ Step 28: Navigate to the deploy section and click on Automatic deployment (mian) 
 
- 
  
 
-+ Step 29: Well done!! 
 
  
 ## Conclusion
@@ -1620,10 +971,10 @@ This project has thought me a lot about the differnt technologys used. It has al
 
 ## Credits 
 
-+ Thanks to the tutors at Coding instatute and to my mentor Anthony for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
++ Thanks to the tutors at Coding instatute and to my mentor Gareth for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
  
 
-+ This help me set up the time zone correctly  [Timezone](https://www.educative.io/answers/what-is-djangoutilstimezone) 
+
 
 + Fontawesome for icons [Fontawesome](https://fontawesome.com/icons/rss?f=classic&s=solid) 
 
@@ -1634,14 +985,9 @@ This project has thought me a lot about the differnt technologys used. It has al
 ### Media 
 
  
- 
++ This gave me some stock images for the site  [istockphoto](https://www.istockphoto.com/stock-photos) 
 
-Background image was taken from [pexels](https://www.pexels.com/search/bistro/) 
-
- 
- 
-
-Favicon was generated by [favicon](https://favicon.io/favicon-generator/) 
++ Favicon was generated by [favicon](https://favicon.io/favicon-generator/) 
 
  
  
