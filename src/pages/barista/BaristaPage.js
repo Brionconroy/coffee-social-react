@@ -50,7 +50,7 @@ const BaristaPage = ({ message, filter = "" }) => {
   return (
     <Row className="h-100 d-flex justify-content-center">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-                    <i className={`fas fa-search ${styles.SearchIcon}`} />
+        <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
           onSubmit={(event) => event.preventDefault()}
@@ -66,7 +66,7 @@ const BaristaPage = ({ message, filter = "" }) => {
 
         {hasLoaded ? (
           <>
-            <h1>Barista's</h1>
+            <h1>Baristas</h1>
             {baristas.results.length ? (
               <InfiniteScroll
                 children={baristas.results.map((barista) => (

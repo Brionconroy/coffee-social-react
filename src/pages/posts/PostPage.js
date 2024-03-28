@@ -19,7 +19,7 @@ import Asset from "../../components/Asset";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
 
-function PostPage() {
+const PostPage = () => {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
 
@@ -63,31 +63,31 @@ function PostPage() {
           ) : null}
           {comments.results.length ? (
             <InfiniteScroll
-            children={comments.results.map((comment) => (
-              <Comment
-                key={comment.id}
-                {...comment}
-                setPost={setPost}
-                setComments={setComments}
-              />
-            ))}
-            dataLength={comments.results.length}
-            loader={<Asset spinner />}
-            hasMore={!!comments.next}
-            next={() => fetchMoreData(comments, setComments)}
-          />
-        ) : currentUser ? (
-          <span>No comments yet, be the first to comment!</span>
-        ) : (
-          <span>No comments... yet</span>
-        )}
-      </Container>
-    </Col>
-    <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
-      <PopularProfiles />
-    </Col>
-  </Row>
-);
+              children={comments.results.map((comment) => (
+                <Comment
+                  key={comment.id}
+                  {...comment}
+                  setPost={setPost}
+                  setComments={setComments}
+                />
+              ))}
+              dataLength={comments.results.length}
+              loader={<Asset spinner />}
+              hasMore={!!comments.next}
+              next={() => fetchMoreData(comments, setComments)}
+            />
+          ) : currentUser ? (
+            <span>No comments yet, be the first to comment!</span>
+          ) : (
+            <span>No comments... yet</span>
+          )}
+        </Container>
+      </Col>
+      <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+        <PopularProfiles />
+      </Col>
+    </Row>
+  );
 }
 
 export default PostPage;

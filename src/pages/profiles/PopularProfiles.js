@@ -11,9 +11,9 @@ const PopularProfiles = ({mobile}) => {
 
   return (
     <Container
-        className={`${appStyles.Content} ${
+      className={`${appStyles.Content} ${
         mobile && "d-lg-none text-center mb-3"
-        }`}
+      }`}
     >
       {popularProfiles.results.length ? (
         <>
@@ -26,7 +26,7 @@ const PopularProfiles = ({mobile}) => {
             </div>
           ) : (
             popularProfiles.results.map((profile) => (
-                <Profile key={profile.id} profile={profile} />
+              <Profile key={profile.id} profile={profile} />
             ))
           )}
         </>

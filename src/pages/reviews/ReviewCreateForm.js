@@ -22,19 +22,19 @@ const ReviewCreateForm = () => {
   const {id} = useParams();
 
   const [reviewData, setReviewData] = useState({
-            content: "",
-            rate: 1
-        });
+    content: "",
+    rate: 1
+  });
 
   const history = useHistory();
 
   // Catch Rating value
   const handleRating = (rate) => {
     setReviewData({
-        ...reviewData,
-        rate
-      });
-    };
+      ...reviewData,
+      rate
+    });
+  };
 
   const handleChange = (event) => {
     setReviewData({
@@ -65,9 +65,9 @@ const ReviewCreateForm = () => {
     <div className="text-center">
       <Form.Group>
         <StarRatings 
-            rating={reviewData.rate}
-            numberOfStars={5} 
-            changeRating={handleRating}
+          rating={reviewData.rate}
+          numberOfStars={5} 
+          changeRating={handleRating}
         />
       </Form.Group>
       <Form.Group>
