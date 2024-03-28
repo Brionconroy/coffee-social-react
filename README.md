@@ -89,7 +89,7 @@ Agile principles were utilised throughout the planning and development of this p
  
  
 
-![Agile](booking_service/static/images/readme/agile_pic.png) 
+![Agile](src/assets/readme/agile.png) 
 
  
  
@@ -115,12 +115,14 @@ I created a user storys template through github issues to layout each user stori
  
  
 
-![User Storys](booking_service/static/images/readme/agile-user-storys.png) 
+![User Storys](src/assets/readme/userstorys.png) 
 
  
  
 
 </details> 
+
+Link to UserStorys https://github.com/users/Brionconroy/projects/8
 
  
  
@@ -627,7 +629,9 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 </details> 
 
- 
+ ### Reuseablity
+
+ Making components reusable makes it more developers friendly and easeir to maintiane load times are also quicker.
  
 
 ## Technologies 
