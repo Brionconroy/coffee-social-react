@@ -907,6 +907,12 @@ As i was doing my responsive testing nothing broke in any of the browers. so i w
 
 </details> 
 
+### ESlint
+
+Eslint was installed and configured locally. After running, some minor errors where found and fixed, react version not specified but no errors were logged.
+
+this is where i got the information to install https://github.com/jsx-eslint/eslint-plugin-react#configuration
+
  
 
 ## Deployment 
