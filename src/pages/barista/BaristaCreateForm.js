@@ -20,15 +20,15 @@ const BaristaCreateForm = () => {
   const id = currentUser?.profile_id;
 
   const [baristaData, setBaristaData] = useState({
-        speciality_types: "",
-        rates_per_hour: "",
-        location: "",
-        email: "",
-    });
+    speciality_types: "",
+    rates_per_hour: "",
+    location: "",
+    email: "",
+  });
 
   const {
     speciality_types, rates_per_hour, location, email,
-    } = baristaData;
+  } = baristaData;
 
   const history = useHistory();
 

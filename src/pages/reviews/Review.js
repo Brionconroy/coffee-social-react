@@ -14,7 +14,7 @@ const Review = (props) => {
     updated_at,
     content,
     rating,
-    } = props;
+  } = props;
 
   return (
     <>

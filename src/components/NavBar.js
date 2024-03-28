@@ -1,5 +1,7 @@
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 import logo from "../assets/logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
@@ -24,7 +26,7 @@ const NavBar = () => {
       setCurrentUser(null);
       removeTokenTimestamp();
     } catch (err) {
-      console.log(err);
+      // console.log(err);
     }
   };
 
@@ -32,62 +34,62 @@ const NavBar = () => {
 
   const addPostIcon =(
     <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/posts/create"
-      >
-        <i className="fa fa-circle-plus"></i>Posts
-      </NavLink>
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/posts/create"
+    >
+      <i className="fa fa-circle-plus"></i>Posts
+    </NavLink>
   )
 
   // Icons that appear when a user is logged in
 
   const loggedInIcons = 
   <>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/feed"
-      >
-        <i className="fa-solid fa-rss"></i>Feed
-      </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/liked"
-      >
-        <i className="fa fa-heart"></i>Likes
-      </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/barista"
-      >
-        <i className="fa-solid fa-mug-hot" />
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/feed"
+    >
+      <i className="fa-solid fa-rss"></i>Feed
+    </NavLink>
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/liked"
+    >
+      <i className="fa fa-heart"></i>Likes
+    </NavLink>
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/barista"
+    >
+      <i className="fa-solid fa-mug-hot" />
         Barista
-      </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/contact_admin"
-      >
-        <i className="fa-solid fa-file-signature" />
+    </NavLink>
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/contact_admin"
+    >
+      <i className="fa-solid fa-file-signature" />
         Report
-      </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        to={`/profiles/${currentUser?.profile_id}`}
-      >
-        <Avatar src={currentUser?.profile_image} text='Profile' height={40}/>
-      </NavLink>
-      <NavLink
-        className={styles.NavLink}
-        to="/"
-        onClick= {handleSignOut}
-      >
-        <i className="fa fa-sign-out-alt"></i>Signout
-      </NavLink>
-      </>;
+    </NavLink>
+    <NavLink
+      className={styles.NavLink}
+      to={`/profiles/${currentUser?.profile_id}`}
+    >
+      <Avatar src={currentUser?.profile_image} text='Profile' height={40}/>
+    </NavLink>
+    <NavLink
+      className={styles.NavLink}
+      to="/"
+      onClick= {handleSignOut}
+    >
+      <i className="fa fa-sign-out-alt"></i>Signout
+    </NavLink>
+  </>;
 
   // Icons that appear when user is logged out
 
