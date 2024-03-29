@@ -1,11 +1,11 @@
-# Coffee Socail React FrontEnd
+# Coffee Social React FrontEnd
 
 ## Introduction 
 
-The concept of the site came to my when i was looking around the internet for information on differnt coffee machines to percous. after i got one the real trubole shooting started. i was going from formum to forum trying to sift throught the information i was looking for. i thought it might be a better idea to create a space for coffee inthosast to come to gether to be able to ask questions and in general selibrate coffee.
-The Coffee Social API is Front-End React App, the Coffee Social. The coffee Social is a social site for coffee lovers to post or blog about there coffee jerney and or to trouble shoot there coffee recipes.
-The site allows an Admin user to login using a pre-registered login(superuser) from there the Admin-user can create, read, update and delete(CRUD) Profiles, post and comments. 
-This website also allows a users to create a login, make a post on the wbesite and view an edit the there posts and comment/like others. 
+The concept of the site came to my when I was looking around the internet for information on differnt coffee machines to purchase. After I got one, the real trubole shooting started. I was going from forum to forum trying to sift through for the information I was looking for. I thought it might be a better idea to create a space for coffee enthusiasts to come together to connect, ask questions, and in general to celebrate coffee.
+The Coffee Social API is a Back-End App that serves the front-end website The Coffee Social. It is a social site for coffee lovers to post or blog about there coffee journey and/or to troubleshoot there coffee recipes.
+The site allows an Admin user to login using a pre-registered login(superuser). From there, the Admin-user can create, read, update and delete(CRUD) Profiles, posts, and comments on posts. 
+This website also allows a user to create a login, make a post on the wbesite and view and edit their posts and comments and like other's. 
 
 
  + This is a link to my live website [Live site](https://coffee-social-react-9c0fd55d8b45.herokuapp.com/)
@@ -69,12 +69,12 @@ This website also allows a users to create a login, make a post on the wbesite a
  
  
 
-## Agile Methodologie 
+## Agile Methodology 
 
  
  
 
-Agile principles were utilised throughout the planning and development of this project. The tecnoligy used in this project was github issues which were categorised into user storys, seperate out into tasks for various aspects of the project. The issues were then added into a project board through github issues as shown. 
+Agile principles were utilised throughout the planning and development of this project. The tecnology used in this project was github issues which were categorised into user stories, seperated out into tasks for various aspects of the project. The issues were then added into a project board through github issues as shown. 
 
  
  
@@ -100,7 +100,7 @@ Agile principles were utilised throughout the planning and development of this p
  
  
 
-I created a user storys template through github issues to layout each user stories containing acceptance criteria. These requirements were altered through the project as things dont always go to plan and new ideas can happen. I also used the MoSCoW method while developing this project this helped to prioritize certian feature ahead of others by using tags on the user storys into three differnt actagorys (Must Haves, Should Have, Could Have). By focusing on the Must Haves first you end up with a MVP (minimuim viable prject) qiucker. 
+I created a user stories template through github issues to lay out each user story containing acceptance criteria. These requirements were altered through the project as things don't always go to plan and new ideas can happen. I also used the MoSCoW method while developing this project this helped to prioritize certian features ahead of others by using tags on the user stories into three different catagories (Must Haves, Should Haves, Could Haves). By focusing on the Must Haves first you end up with a MVP (minimuim viable prject) qiucker. 
 
  
  
@@ -110,19 +110,19 @@ I created a user storys template through github issues to layout each user stori
  
  
 
-<summary>User Storys</summary>  
+<summary>User Stories</summary>  
 
  
  
 
-![User Storys](src/assets/readme/userstorys.png) 
+![User Stories](src/assets/readme/userstorys.png) 
 
  
  
 
 </details> 
 
-Link to UserStorys https://github.com/users/Brionconroy/projects/8
+Link to UserStories https://github.com/users/Brionconroy/projects/8
 
  
  
@@ -132,7 +132,7 @@ Link to UserStorys https://github.com/users/Brionconroy/projects/8
  
  
 
-As a new visitor to the site, I would like to be able to make a booking and edit it acourdingly. i would also like to be able to login to the website so that i may find and edit my booking. As a returning customer, I want to be able to easily navigate the site and quickily find what I'm looking for. I would also like the ability to contact the Resteraunt directly through their website. 
+As a new visitor to the site, I would like to be able to make a profile and connect with others on the site. I would also like to be able to login to the website so that I can view and engage with the site's content. I want to be able to easily navigate the site and quickily find what I'm looking for. I would also like to be able to share my own posts and reviews. 
 
  
  
@@ -142,15 +142,15 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-+ Stratagy: Is this content relvent to the user and is it culturally appropriate? 
++ Stratagy: Is this content relevent to the user and is it culturally appropriate? 
 
-+ Scope: Are we accomplishing our goals of create a space that people will come together to discuss coffee. 
++ Scope: Are we accomplishing our goals of create a space that people will come together to discuss coffee? 
 
 + Structure: How many pages should we have in our website and why? 
 
 + Skeleton: Does the structure of the wireframe meet the users needs? Is the web page responsive? 
 
-+ Surface: Does the site look good visully? Does it have enough images and colours? 
++ Surface: Does the site look good visually? Does it have enough images and colours? 
 
  
  
@@ -205,9 +205,9 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 + The Navbar contains the logo for the website and when you click on it it will bring you to the home page. 
 
-+ The sticky navbar, has 8 differnt heading, the heading will change if you are login from login to loggout. 
++ The sticky navbar, has 8 differnt heading, the heading will change if you are logged in from 'login' to 'loggout'. 
 
-+ The header reflects the login state of the user by showing the login or the log out icon inthe header. 
++ The header reflects the login state of the user by showing the login or the log out icon in the header. 
 
  
  
@@ -249,9 +249,9 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
 ## Log-in form
 
-+ The log in on the navbar will disapear when you have logged in confreming your login 
++ The log in on the navbar will disapear when you have logged in confirming your login 
 
-+ on the login form you can also sign up if you havent alread done so. 
++ on the login form you can also sign up if you haven't alread done so. 
 
 <details> 
 
@@ -278,7 +278,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-+ The sign-up form maneks you enter your new password twice and is case sensitve. when youve sign-up it will bring you to the sign-in page outomaticly.
++ The sign-up form makes you enter your new password twice and is case sensitve. When you've signed up, it will bring you to the sign-in page automatically
 
  
  
@@ -331,7 +331,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-+ the edit profile page lets you add a profile picture, edit you password and user name or add yourself as a Barista user.
++ the edit profile page lets you add a profile picture, edit your password and user name or add yourself as a Barista user.
 
  
  
@@ -355,7 +355,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
  
  
-## Barista registation form
+## Barista registration form
 
  
  
@@ -370,12 +370,12 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-<summary>Barista registation form</summary> 
+<summary>Barista registration form</summary> 
 
  
  
 
-![Barista registation form](src/assets/readme/barista-registation.png) 
+![Barista registration form](src/assets/readme/barista-registation.png) 
 
  
  
@@ -388,7 +388,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Barista Page
 
 
-+ this page lets you see the barista that are registeed and you create reviews and lets you see others reviews
++ this page lets you see the baristas that are registered, allows you to create reviews, and lets you see other's reviews
 
 <details> 
 
@@ -411,7 +411,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Reviews Page
 
 
-+ This page lets you review barista that are registered 
++ This page lets you review baristas that are registered 
 
 <details> 
 
@@ -434,7 +434,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Reviews Form
 
 
-+ This page lets you write a review for baristas.
++ This page lets you write a review for a barista.
 
 <details> 
 
@@ -456,7 +456,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Post Form page
 
 
-+ This page lets you create a post with images and contect.
++ This page lets you create a post with images and text content.
 
 <details> 
 
@@ -478,7 +478,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Edit Posts
 
 
-+ This page lets you create a post with images and contect.
++ This page lets you create a post with images and text content.
 
 <details> 
 
@@ -588,7 +588,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Most followed Profile
 
 
-+ This lets you see the most popular profiles on the sociial website.
++ This lets you see the most popular profiles on the social website.
 
 <details> 
 
@@ -610,7 +610,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ## Contact Admin
 
 
-+ This lets you Contact the administaor of the site for quieries and reports offensive content.
++ This lets you Contact the administrator of the site for quieries and also allows you to report offensive content.
 
 <details> 
 
@@ -631,7 +631,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
  ### Reuseablity
 
- Making components reusable makes it more developers friendly and easeir to maintiane load times are also quicker.
+ Making components reusable makes the site more developer friendly and easeir to maintain. The various components, such as the moredropdown, navbar, and avatar, are reuseable in different parts of the site. This makes the load times quicker as the site does not neeed to relaod the component each time it is used. 
  
 
 ## Technologies 
@@ -708,7 +708,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
  
  
 
-+ My my report section was not send reports to the data base, this was dou to an incorect url naming convention. it was an easy fix by changing contact-admins to contact-admin. by removing the s everthing worked fine.
++ My report section was not sending reports to the data base, this was due to an incorect url naming convention. It was an easy fix by changing contact-admins to contact-admin. By removing the s everthing worked fine.
 
 
  
@@ -728,15 +728,17 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
-| The Corner Bistro Logo present | Yes  | Pass |
+| The Coffee Social Logo present | Yes  | Pass |
 | Click Logo in navbar | Home page Redirect | Pass |
 | Click Home in navbar | Home page Redirect | Pass |
-| Click Menu in navbar| Bring user to menu page | Pass |
+| Click Feed in navbar| Bring user to feed page | Pass |
+| Click Like in navbar| Bring user to thier like page | Pass |
+| Click Report in navbar| Bring user to contact admin page | Pass |
 | Click Log-in | Redirect to Log-in page | Pass |
 | Click Log-out | Redirect to Log-out page | Pass |
 | Click Sign-up | Redirect to Sign-up page | Pass |
-| If user Logged in booking appears in navbar | log-in disappears and booking appears | Pass |
-| Click Booking in navbar | Redirect to Booking page | Pass |
+| If user is Logged in logged in content appears in navbar | log-in disappears and log-out appears | Pass |
+| Click profile in navbar | Redirect to profile page | Pass |
 
 
 
@@ -762,16 +764,16 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 | Make sure when pressing Posts in the navbar it redirects you to the post from | Yes  | Pass |
 | Make sure that when post is created that it is editable (edit and delete functinality) | Yes  | Pass |
 | Make sure the comment and like counters are working apropritley  | Yes  | Pass |
-| Make sure infinit scroll is working on the post list page | Yes  | Pass |
+| Make sure infinite scroll is working on the post list page | Yes  | Pass |
 
 
-**Contact Adiministater**
+**Contact Adiministator**
 
 
 
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
-| Make sure you can navagite to contact-admin in navbar and be able to submit the form | Yes  | Pass |
+| Make sure you can navagite to contact-admin in navbar and are able to submit the form | Yes  | Pass |
 
 
 **Like a Post**
@@ -793,8 +795,8 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
 | Ensure user can create a comment on a post by clicking the speech icon | Yes  | Pass |
-| Make sure when you Edit a comment by clicking the three dot it works | Yes  | Pass |
-| Make sure when you Delete a comment by clicking the three dot and preesing delete | Yes  | Pass |
+| Make sure when you Edit a comment by clicking the three dots that it works | Yes  | Pass |
+| Make sure when you Delete a comment by clicking the three dots and preesing delete | Yes  | Pass |
 | Make sure that all the comments on a post can be viewed | Yes  | Pass |
 | Make sure that the time you posted the comment is correct | Yes  | Pass |
 
@@ -821,7 +823,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 |Test  | Expected Outcome  | Pass or Fail |
 |--|--|--|
 | Sign-in form signs in a user if information is correct  | Yes  | Pass |
-| Sign-in form dose not signs in a user if information is incorrect  | Yes  | Pass |
+| Sign-in form does not sign in a user if information is incorrect  | Yes  | Pass |
 | Sign-in form will throw a (The username and/or password you specified are not correct.) if password is incorrect| Yes  | Pass |
 | Sign-in form will throw a (The username and/or password you specified are not correct.) if username is incorrect| Yes  | Pass |
 | The Remember Me if toggled remembers users information | Yes  | Pass |
@@ -843,7 +845,7 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 ### Code Validation 
 
 
-+ Before I deployed my App for the final time. I ran the code throught the validator and it pass. 
++ Before I deployed my App for the final time. I ran the code throught the validator and it passed. 
 
  
 
@@ -879,7 +881,7 @@ Steps to test:
 + Click and drag the responsive window to maximum width
 + See if anything breakes
 
-As i was doing my responsive testing nothing broke in any of the browers. so i would consider that a pass.
+As i was doing my responsive testing nothing broke in any of the browsers. so i would consider that a pass.
 
  
  
@@ -889,7 +891,7 @@ As i was doing my responsive testing nothing broke in any of the browers. so i w
  
  
 
-+ I used the chrome developer tool light house witch gave me the insight of how my webpage looked on diffent screens everything looked great on each page and when i ran the light house analizs these are the score i got returned to me.  Testing was performed and found performance to be poor,this was because there where so many images. this could be combatted by improved by compressing images before uploading them. I didnt have time to implimant this but will in the future.
++ I used the chrome developer tool lighthouse which gave me the insight of how my webpage looked on diffent screens. Everything looked great on each page. When I ran the lighthouse analysis these are the scores returned to me. Testing was performed and found performance to be poor, this was because there where so many images. This could be combatted or improved by compressing images before uploading them. I didnt have time to implement this but will in the future.
 
  
  
@@ -915,7 +917,7 @@ As i was doing my responsive testing nothing broke in any of the browers. so i w
 
 Eslint was installed and configured locally. After running, some minor errors where found and fixed, react version not specified but no errors were logged.
 
-this is where i got the information to install https://github.com/jsx-eslint/eslint-plugin-react#configuration
+This is where i got the information to install https://github.com/jsx-eslint/eslint-plugin-react#configuration
 
  
 
@@ -924,12 +926,12 @@ this is where i got the information to install https://github.com/jsx-eslint/esl
  
  
 
-The first thing you should do when creating a new project is to deploy it as quick as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy too. I used in React, so the first thing you need to do is to create a React project in you work space and install all the supporting libraries. Once everything is installed you should make sure everthing is working with some hello world text.
+The first thing you should do when creating a new project is to deploy it as quickly as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy to. So the first thing you need to do is to create a React project in your work space and install all the supporting libraries. Once everything is installed you should make sure everthing is working with some 'hello world' text.
 
  
  
 
-Just to make a note of this the database used in the workspace (db.sqlite3) does not work when deployed to Heroku so we need a differnt database when deplying. I used ElephantSQL database as it was free and works with Heroku. 
+Just to make a note of this, the database used in the workspace (db.sqlite3) does not work when deployed to Heroku so we need a differnt database when deplying. I used ElephantSQL database as it was free and works with Heroku. 
 
  
  
@@ -977,11 +979,11 @@ Just to make a note of this the database used in the workspace (db.sqlite3) does
  
 ## Conclusion
 
-This project has thought me a lot about the differnt technologys used. It has also thought me a lot about time constrains and working to a deadline. The deadlines forced me to prioritize differnt parts of the project with User Storys and MoSCoW thinking. Moving on if you get stuck on something small and come back to it at a later time is a must when you have time constains. keeping everything well documented is a must, when not fully finishing feature (if you get stuck) so that when you come back to the feature you can pick up where you left off. 
+This project has thought me a lot about the differnt technologies used. It has also thought me a lot about time constrains and working to a deadline. The deadlines forced me to prioritize different parts of the project with User Stories and MoSCoW thinking. Moving on if you get stuck on something small and come back to it at a later time is a must when you have time constraints. Keeping everything well documented is a must when not fully finishing a feature (if you get stuck) so that when you come back to the feature you can pick up where you left off. 
 
 ## Credits 
 
-+ Thanks to the tutors at Coding instatute and to my mentor Gareth for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
++ Thanks to the tutors at Coding institute and to my mentor Gareth for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
  
 
 
